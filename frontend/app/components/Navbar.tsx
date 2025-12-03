@@ -28,7 +28,7 @@ const Navbar = () => {
 
       {/* 2. Navigation Links */}
       {/* Changed gap-10 to gap-16 for more space between elements */}
-      <ul className="hidden md:flex gap-16 text-lg">
+      <ul className="hidden md:flex gap-25 text-lg">
         <li>
           <Link
             href="/"
@@ -58,7 +58,7 @@ const Navbar = () => {
       {/* 3. Right Section (Search + Future Button Placeholder) */}
       <div className="flex items-center gap-6">
         {/* Search Bar */}
-        <form onSubmit={handleSearch} className="relative">
+        <form onSubmit={handleSearch} className="relative mr-50">
           <input
             type="text"
             placeholder="Search..."
