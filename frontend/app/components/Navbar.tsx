@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Logo from "./Logo";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 
@@ -21,8 +22,8 @@ const Navbar = () => {
     justify-between py-5 px-10 lg:px-24 border-b border-gray-700 bg-black"
     >
       {/* 1. Logo Section */}
-      <Link href="/" className="text-white font-bold text-xl">
-        <p>Logo</p>
+      <Link href="/" className="transition-opacity hover:opacity-90">
+        <Logo />
       </Link>
 
       {/* 2. Navigation Links */}
@@ -56,7 +57,6 @@ const Navbar = () => {
 
       {/* 3. Right Section (Search + Future Button Placeholder) */}
       <div className="flex items-center gap-6">
-        
         {/* Search Bar */}
         <form onSubmit={handleSearch} className="relative">
           <input
@@ -90,7 +90,7 @@ const Navbar = () => {
 
         {/* Future Login/Signup Button Placeholder */}
         {/* This empty div reserves 80px of space so the search bar isn't stuck to the edge */}
-        <div className="w-20 hidden lg:block"></div> 
+        <div className="w-20 hidden lg:block"></div>
       </div>
     </nav>
   );
