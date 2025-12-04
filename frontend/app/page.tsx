@@ -1,11 +1,9 @@
-
+import Hero from "./components/Hero";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <div className="space-y-3 max-w-3xl">
-        <h1>Home page</h1>
-      </div>
-    </div>
+    <main className="min-h-screen bg-[#0a0a0a]">
+      <Hero />
+    </main>
   );
 }
